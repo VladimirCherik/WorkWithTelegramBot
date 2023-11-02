@@ -27,14 +27,15 @@ public class StartCommand extends BotCommand {
 
     @Override
     public void execute(AbsSender absSender, User user, Chat chat, String[] arguments) {
-        String text = "what is the kind of currency you would like to know : ";
+        String text = "Hi! I am a Bot that can help you to know actually rate of the currency.\n" +
+                "Please make your choose. ";
 
         SendMessage message = new SendMessage();
         message.setText(text);
         message.setChatId(Long.toString(chat.getId()));
 
-        List<InlineKeyboardButton> buttons = Stream.of(Currency.USD, Currency.EUR, Currency.UAH)
-                .map(Enum::name)
+        List<InlineKeyboardButton> buttons = Stream.of("to get data", "settings")
+//                .map(Enum::name)
                 .map(it -> InlineKeyboardButton.builder().text(it).callbackData(it).build())
                 .collect(Collectors.toList());
 

@@ -33,6 +33,7 @@ public class StartCommand extends BotCommand {
         KeyboardButton createNotificationButton = KeyboardButton
                 .builder()
                 .text("to create reminder")
+//                .text("ddd")
                 .build();
         KeyboardRow keyboard = new KeyboardRow(Collections.singletonList(createNotificationButton));
         message.setReplyMarkup(ReplyKeyboardMarkup.builder().keyboardRow(keyboard).build());

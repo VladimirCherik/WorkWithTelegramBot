@@ -5,6 +5,7 @@ import com.javacore5.feature.telegram.TelegramBotService;
 import com.javacore5.feature.ui.PrettyPrintCurrencyService;
 
 
+
 public class TelegramBot_1 {
 
     public static void main(String[] args) {
@@ -16,12 +17,13 @@ public class TelegramBot_1 {
 //
 //        String prettyText = new PrettyPrintCurrencyService().convert(rate, usd);
 //        System.out.println("prettyText = " + prettyText);
-//
+
 
         ///////////////////////////////////////////////////////////////////
-//        TelegramBotService telegramBotService = new TelegramBotService();
+        TelegramBotService telegramBotService = new TelegramBotService();
 
-        featureFSM.telegram.TelegramBotService telegramBotService1 = new featureFSM.telegram.TelegramBotService();
+//        featureFSM.telegram.TelegramBotService telegramBotService1 = new featureFSM.telegram.TelegramBotService();
+
 
     }
 }
